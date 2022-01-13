@@ -2,9 +2,39 @@ class PagesController < ApplicationController
   def about
   end
 
-  def contact
+  def home
   end
 
-  def home
+  def donate
+  end
+
+  def coasters
+  end
+
+  def news
+  end
+
+  def events
+  end
+
+  def products
+  end
+
+  def admin
+  end
+
+  def volunteer
+  end
+
+  def make_event
+  end
+
+  def innovation
+  end
+
+  def innovation_details
+  end
+
+  def innovation_application
   end
 end
