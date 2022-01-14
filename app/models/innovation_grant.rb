@@ -1,0 +1,2 @@
+class InnovationGrant < ApplicationRecord
+end
