@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_14_171312) do
+ActiveRecord::Schema.define(version: 2022_01_14_171519) do
 
   create_table "coasters", force: :cascade do |t|
     t.integer "quantity"
@@ -28,6 +28,15 @@ ActiveRecord::Schema.define(version: 2022_01_14_171312) do
     t.integer "year_awarded"
     t.string "image"
     t.string "link_url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "partners", force: :cascade do |t|
+    t.string "organisation_name"
+    t.string "organisation_description"
+    t.string "link_url"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
