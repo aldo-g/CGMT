@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_14_172432) do
+ActiveRecord::Schema.define(version: 2022_01_14_172739) do
 
   create_table "applications", force: :cascade do |t|
     t.string "type"
@@ -51,6 +51,17 @@ ActiveRecord::Schema.define(version: 2022_01_14_172432) do
     t.integer "year_awarded"
     t.string "image"
     t.string "link_url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "news_pieces", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "text"
+    t.string "image"
+    t.date "date"
+    t.boolean "pinned"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
