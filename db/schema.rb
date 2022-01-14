@@ -10,10 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_14_171519) do
+ActiveRecord::Schema.define(version: 2022_01_14_172432) do
+
+  create_table "applications", force: :cascade do |t|
+    t.string "type"
+    t.string "email"
+    t.string "name"
+    t.string "organisation"
+    t.string "text"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "coasters", force: :cascade do |t|
     t.integer "quantity"
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.string "organizer"
+    t.date "date"
+    t.string "desription"
+    t.string "image"
     t.string "address"
     t.float "latitude"
     t.float "longitude"
