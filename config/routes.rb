@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   get 'innovation', to: 'pages#innovation'
   get 'innovation_details', to: 'pages#innovation_details'
   get 'innovation_application', to: 'pages#innovation_application'
+  get 'admin', to: 'pages#admin'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
