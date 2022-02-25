@@ -8,13 +8,23 @@
 
 events = Event.create([
   {
-    name: "coast-to-coast"
-    organizer: "Evan"
-    date: 01-07-2020
-    desription: "bike trip"
-    image: "image"
-    address: "aisdad"
-    latitude:
-    longitude:
+    name: "coast-to-coast",
+    organizer: "Evan",
+    date: 01-07-2020,
+    desription: "bike trip",
+    image: "image",
+    address: "aisdad",
+    latitude: 67.88,
+    longitude: 67.88
+  },
+  {
+    name: "last-to-last",
+    organizer: "Ali",
+    date: 01-07-2020,
+    desription: "bike trip",
+    image: "image",
+    address: "aisdad",
+    latitude: 67.88,
+    longitude: 67.88
   }
 ])
