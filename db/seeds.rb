@@ -27,4 +27,24 @@ events = Event.create([
     latitude: 67.88,
     longitude: 67.88
   }
+  {
+    name: "first-to-first",
+    organizer: "Evan",
+    date: 01-07-2020,
+    desription: "bike trip",
+    image: "image",
+    address: "aisdad",
+    latitude: 67.88,
+    longitude: 67.88
+  },
+  {
+    name: "mid-to-mid",
+    organizer: "Ali",
+    date: 01-07-2020,
+    desription: "bike trip",
+    image: "image",
+    address: "aisdad",
+    latitude: 67.88,
+    longitude: 67.88
+  }
 ])
