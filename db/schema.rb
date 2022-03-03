@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_14_172739) do
+ActiveRecord::Schema.define(version: 2022_03_03_140125) do
 
   create_table "applications", force: :cascade do |t|
     t.string "type"
@@ -71,6 +71,13 @@ ActiveRecord::Schema.define(version: 2022_01_14_172739) do
     t.string "organisation_description"
     t.string "link_url"
     t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
