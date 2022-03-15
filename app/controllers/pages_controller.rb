@@ -37,4 +37,7 @@ class PagesController < ApplicationController
 
   def innovation_application
   end
+
+  def gallery
+  end
 end
