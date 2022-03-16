@@ -26,7 +26,7 @@ events = Event.create([
     address: "aisdad",
     latitude: 67.88,
     longitude: 67.88
-  }
+  },
   {
     name: "first-to-first",
     organizer: "Evan",
