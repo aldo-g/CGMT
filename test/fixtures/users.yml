@@ -3,7 +3,9 @@
 one:
   name: MyString
   email: MyString
+  password_digest_string: MyString
 
 two:
   name: MyString
   email: MyString
+  password_digest_string: MyString
