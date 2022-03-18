@@ -5,4 +5,5 @@ class NewsPiece < ApplicationRecord
   validates :image, presence:true
   validates :date, presence:true
   validates :pinned, presence:true
+  belongs_to :user
 end

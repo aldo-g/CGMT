@@ -5,4 +5,5 @@ class InnovationGrant < ApplicationRecord
   validates :year_awarded, presence:true
   validates :image, presence:true
   validates :link_url, presence:true
+  belongs_to :user
 end
