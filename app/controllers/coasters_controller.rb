@@ -1,0 +1,2 @@
+class CoastersController < ApplicationController
+end

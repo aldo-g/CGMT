@@ -1,0 +1,2 @@
+class InnovationGrantsController < ApplicationController
+end
