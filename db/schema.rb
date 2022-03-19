@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_17_124557) do
+ActiveRecord::Schema.define(version: 2022_03_19_001109) do
 
   create_table "applications", force: :cascade do |t|
     t.string "type"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 2022_03_17_124557) do
     t.float "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_coasters_on_user_id"
   end
 
   create_table "events", force: :cascade do |t|
@@ -42,6 +44,8 @@ ActiveRecord::Schema.define(version: 2022_03_17_124557) do
     t.float "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_events_on_user_id"
   end
 
   create_table "innovation_grants", force: :cascade do |t|
@@ -53,6 +57,8 @@ ActiveRecord::Schema.define(version: 2022_03_17_124557) do
     t.string "link_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_innovation_grants_on_user_id"
   end
 
   create_table "news_pieces", force: :cascade do |t|
@@ -64,6 +70,8 @@ ActiveRecord::Schema.define(version: 2022_03_17_124557) do
     t.boolean "pinned"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_news_pieces_on_user_id"
   end
 
   create_table "partners", force: :cascade do |t|
@@ -73,6 +81,8 @@ ActiveRecord::Schema.define(version: 2022_03_17_124557) do
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_partners_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -83,4 +93,9 @@ ActiveRecord::Schema.define(version: 2022_03_17_124557) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "coasters", "users"
+  add_foreign_key "events", "users"
+  add_foreign_key "innovation_grants", "users"
+  add_foreign_key "news_pieces", "users"
+  add_foreign_key "partners", "users"
 end
