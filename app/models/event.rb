@@ -1,4 +1,3 @@
-
 class Event < ApplicationRecord
   validates :name, presence:true
   validates :organizer, presence:true
