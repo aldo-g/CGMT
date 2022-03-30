@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Quanity:</strong>
+  <%= @coaster.quanity %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @coaster.address %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @coaster.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @coaster.longitude %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @coaster.date %>
+</p>
+
+<%= link_to 'Edit', edit_coaster_path(@coaster) %> |
+<%= link_to 'Back', coasters_path %>

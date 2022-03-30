@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_30_144412) do
+ActiveRecord::Schema.define(version: 2022_03_30_144833) do
 
   create_table "applications", force: :cascade do |t|
     t.string "type"
@@ -23,14 +23,13 @@ ActiveRecord::Schema.define(version: 2022_03_30_144412) do
   end
 
   create_table "coasters", force: :cascade do |t|
-    t.integer "quantity"
+    t.integer "quanity"
     t.string "address"
     t.float "latitude"
     t.float "longitude"
+    t.date "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "user_id"
-    t.index ["user_id"], name: "index_coasters_on_user_id"
   end
 
   create_table "events", force: :cascade do |t|
@@ -91,7 +90,6 @@ ActiveRecord::Schema.define(version: 2022_03_30_144412) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "coasters", "users"
   add_foreign_key "events", "users"
   add_foreign_key "innovation_grants", "users"
   add_foreign_key "partners", "users"

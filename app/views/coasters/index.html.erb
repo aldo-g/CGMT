@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Coasters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quanity</th>
+      <th>Address</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coasters.each do |coaster| %>
+      <tr>
+        <td><%= coaster.quanity %></td>
+        <td><%= coaster.address %></td>
+        <td><%= coaster.latitude %></td>
+        <td><%= coaster.longitude %></td>
+        <td><%= coaster.date %></td>
+        <td><%= link_to 'Show', coaster %></td>
+        <td><%= link_to 'Edit', edit_coaster_path(coaster) %></td>
+        <td><%= link_to 'Destroy', coaster, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Coaster', new_coaster_path %>
