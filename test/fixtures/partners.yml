@@ -2,12 +2,12 @@
 
 one:
   organisation_name: MyString
-  organisation_description: MyString
+  organisation_description: MyText
   link_url: MyString
   image: MyString
 
 two:
   organisation_name: MyString
-  organisation_description: MyString
+  organisation_description: MyText
   link_url: MyString
   image: MyString

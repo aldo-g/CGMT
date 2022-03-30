@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_30_150407) do
+ActiveRecord::Schema.define(version: 2022_03_30_150906) do
 
   create_table "applications", force: :cascade do |t|
     t.string "type"
@@ -43,8 +43,6 @@ ActiveRecord::Schema.define(version: 2022_03_30_150407) do
     t.float "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "user_id"
-    t.index ["user_id"], name: "index_events_on_user_id"
   end
 
   create_table "innovation_grants", force: :cascade do |t|
@@ -70,13 +68,11 @@ ActiveRecord::Schema.define(version: 2022_03_30_150407) do
 
   create_table "partners", force: :cascade do |t|
     t.string "organisation_name"
-    t.string "organisation_description"
+    t.text "organisation_description"
     t.string "link_url"
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "user_id"
-    t.index ["user_id"], name: "index_partners_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -87,6 +83,4 @@ ActiveRecord::Schema.define(version: 2022_03_30_150407) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "events", "users"
-  add_foreign_key "partners", "users"
 end
