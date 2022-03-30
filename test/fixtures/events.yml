@@ -3,9 +3,9 @@
 one:
   name: MyString
   organizer: MyString
-  date: 2022-01-14
-  desription: MyString
-  image: MyString
+  date: 2022-03-30
+  description: MyText
+  image_url: MyString
   address: MyString
   latitude: 1.5
   longitude: 1.5
@@ -13,9 +13,9 @@ one:
 two:
   name: MyString
   organizer: MyString
-  date: 2022-01-14
-  desription: MyString
-  image: MyString
+  date: 2022-03-30
+  description: MyText
+  image_url: MyString
   address: MyString
   latitude: 1.5
   longitude: 1.5

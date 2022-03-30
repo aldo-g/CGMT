@@ -4,8 +4,8 @@ class CreateEvents < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :organizer
       t.date :date
-      t.string :desription
-      t.string :image
+      t.text :description
+      t.string :image_url
       t.string :address
       t.float :latitude
       t.float :longitude

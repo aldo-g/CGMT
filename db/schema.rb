@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_30_150906) do
+ActiveRecord::Schema.define(version: 2022_03_30_151234) do
 
   create_table "applications", force: :cascade do |t|
     t.string "type"
@@ -36,8 +36,8 @@ ActiveRecord::Schema.define(version: 2022_03_30_150906) do
     t.string "name"
     t.string "organizer"
     t.date "date"
-    t.string "desription"
-    t.string "image"
+    t.text "description"
+    t.string "image_url"
     t.string "address"
     t.float "latitude"
     t.float "longitude"
