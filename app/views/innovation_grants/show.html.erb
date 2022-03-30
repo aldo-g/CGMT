@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project name:</strong>
+  <%= @innovation_grant.project_name %>
+</p>
+
+<p>
+  <strong>Organisation name:</strong>
+  <%= @innovation_grant.organisation_name %>
+</p>
+
+<p>
+  <strong>Project description:</strong>
+  <%= @innovation_grant.project_description %>
+</p>
+
+<p>
+  <strong>Year awarded:</strong>
+  <%= @innovation_grant.year_awarded %>
+</p>
+
+<p>
+  <strong>Link url:</strong>
+  <%= @innovation_grant.link_url %>
+</p>
+
+<%= link_to 'Edit', edit_innovation_grant_path(@innovation_grant) %> |
+<%= link_to 'Back', innovation_grants_path %>

@@ -3,15 +3,13 @@
 one:
   project_name: MyString
   organisation_name: MyString
-  project_description: MyString
+  project_description: MyText
   year_awarded: 1
-  image: MyString
   link_url: MyString
 
 two:
   project_name: MyString
   organisation_name: MyString
-  project_description: MyString
+  project_description: MyText
   year_awarded: 1
-  image: MyString
   link_url: MyString

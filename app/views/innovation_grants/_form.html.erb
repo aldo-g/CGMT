@@ -1,0 +1,42 @@
+<%= form_with(model: innovation_grant) do |form| %>
+  <% if innovation_grant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(innovation_grant.errors.count, "error") %> prohibited this innovation_grant from being saved:</h2>
+
+      <ul>
+        <% innovation_grant.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :project_name %>
+    <%= form.text_field :project_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :organisation_name %>
+    <%= form.text_field :organisation_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :project_description %>
+    <%= form.text_area :project_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_awarded %>
+    <%= form.number_field :year_awarded %>
+  </div>
+
+  <div class="field">
+    <%= form.label :link_url %>
+    <%= form.text_field :link_url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

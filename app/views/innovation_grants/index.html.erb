@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Innovation Grants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project name</th>
+      <th>Organisation name</th>
+      <th>Project description</th>
+      <th>Year awarded</th>
+      <th>Link url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @innovation_grants.each do |innovation_grant| %>
+      <tr>
+        <td><%= innovation_grant.project_name %></td>
+        <td><%= innovation_grant.organisation_name %></td>
+        <td><%= innovation_grant.project_description %></td>
+        <td><%= innovation_grant.year_awarded %></td>
+        <td><%= innovation_grant.link_url %></td>
+        <td><%= link_to 'Show', innovation_grant %></td>
+        <td><%= link_to 'Edit', edit_innovation_grant_path(innovation_grant) %></td>
+        <td><%= link_to 'Destroy', innovation_grant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Innovation Grant', new_innovation_grant_path %>
