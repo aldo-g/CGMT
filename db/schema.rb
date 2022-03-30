@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_19_001109) do
+ActiveRecord::Schema.define(version: 2022_03_30_101503) do
 
   create_table "applications", force: :cascade do |t|
     t.string "type"
@@ -63,15 +63,13 @@ ActiveRecord::Schema.define(version: 2022_03_19_001109) do
 
   create_table "news_pieces", force: :cascade do |t|
     t.string "title"
-    t.string "description"
-    t.string "text"
+    t.text "description"
+    t.text "text"
     t.string "image"
     t.date "date"
     t.boolean "pinned"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "user_id"
-    t.index ["user_id"], name: "index_news_pieces_on_user_id"
   end
 
   create_table "partners", force: :cascade do |t|
@@ -96,6 +94,5 @@ ActiveRecord::Schema.define(version: 2022_03_19_001109) do
   add_foreign_key "coasters", "users"
   add_foreign_key "events", "users"
   add_foreign_key "innovation_grants", "users"
-  add_foreign_key "news_pieces", "users"
   add_foreign_key "partners", "users"
 end
