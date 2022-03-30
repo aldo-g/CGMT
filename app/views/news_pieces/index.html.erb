@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>News Pieces</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Text</th>
+      <th>Image</th>
+      <th>Date</th>
+      <th>Pinned</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @news_pieces.each do |news_piece| %>
+      <tr>
+        <td><%= news_piece.title %></td>
+        <td><%= news_piece.description %></td>
+        <td><%= news_piece.text %></td>
+        <td><%= news_piece.image %></td>
+        <td><%= news_piece.date %></td>
+        <td><%= news_piece.pinned %></td>
+        <td><%= link_to 'Show', news_piece %></td>
+        <td><%= link_to 'Edit', edit_news_piece_path(news_piece) %></td>
+        <td><%= link_to 'Destroy', news_piece, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New News Piece', new_news_piece_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @news_piece.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @news_piece.description %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @news_piece.text %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @news_piece.image %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @news_piece.date %>
+</p>
+
+<p>
+  <strong>Pinned:</strong>
+  <%= @news_piece.pinned %>
+</p>
+
+<%= link_to 'Edit', edit_news_piece_path(@news_piece) %> |
+<%= link_to 'Back', news_pieces_path %>
