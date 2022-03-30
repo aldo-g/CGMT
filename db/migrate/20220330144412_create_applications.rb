@@ -3,9 +3,9 @@ class CreateApplications < ActiveRecord::Migration[6.1]
     create_table :applications do |t|
       t.string :type
       t.string :email
-      t.string :name
       t.string :organisation
-      t.string :text
+      t.text :text
+      t.date :date
 
       t.timestamps
     end

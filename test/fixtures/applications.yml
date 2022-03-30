@@ -3,13 +3,13 @@
 one:
   type: 
   email: MyString
-  name: MyString
   organisation: MyString
-  text: MyString
+  text: MyText
+  date: 2022-03-30
 
 two:
   type: 
   email: MyString
-  name: MyString
   organisation: MyString
-  text: MyString
+  text: MyText
+  date: 2022-03-30
