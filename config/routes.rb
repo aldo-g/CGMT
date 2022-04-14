@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   resources :applications
   resources :users
+  resources :coasters
+  resources :events
+  resources :innovation_grants
+  resources :news_pieces
+  resources :partners
   root to: 'pages#home'
   get '/about', to: 'pages#about'
   get '/coasters', to: 'pages#coasters'
@@ -16,10 +21,5 @@ Rails.application.routes.draw do
   get '/innovation_application', to: 'pages#innovation_application'
   get '/admin', to: 'pages#admin'
   get '/gallery', to: 'pages#gallery'
-  resources :coasters
-  resources :events
-  resources :innovation_grants
-  resources :news_pieces
-  resources :partners
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
