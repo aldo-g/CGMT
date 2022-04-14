@@ -11,7 +11,7 @@ class PagesController < ApplicationController
   def coasters
   end
 
-  def news
+  def news_pieces
   end
 
   def events

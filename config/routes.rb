@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get '/coasters', to: 'pages#coasters'
   get '/home', to: 'pages#home'
   get '/donate', to: 'pages#donate'
-  get '/news', to: 'pages#news'
+  get '/news', to: 'pages#news_pieces'
   get '/events', to: 'pages#events'
   get '/products', to: 'pages#products'
   get '/volunteer', to: 'pages#volunteer'
