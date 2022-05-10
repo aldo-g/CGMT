@@ -58,3 +58,6 @@ gem 'simple_form', github: 'heartcombo/simple_form'
 
 #rails admin gem added
 gem 'rails_admin', '~> 3.0'
+
+#devise gem added, sorts authentication
+gem 'devise'
