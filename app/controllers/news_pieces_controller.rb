@@ -1,5 +1,6 @@
 class NewsPiecesController < ApplicationController
   before_action :set_news_piece, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /news_pieces or /news_pieces.json
   def index

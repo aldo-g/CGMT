@@ -1,5 +1,6 @@
 class PartnersController < ApplicationController
   before_action :set_partner, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /partners or /partners.json
   def index

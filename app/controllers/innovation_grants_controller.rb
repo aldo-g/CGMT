@@ -1,5 +1,6 @@
 class InnovationGrantsController < ApplicationController
   before_action :set_innovation_grant, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /innovation_grants or /innovation_grants.json
   def index
