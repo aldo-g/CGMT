@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  get 'home/index'
   devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :applications
   resources :coasters
   resources :events
   resources :innovation_grants
