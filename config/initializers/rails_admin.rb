@@ -1,7 +1,11 @@
 RailsAdmin.config do |config|
   config.asset_source = :webpacker
   config.authorize_with do
-    redirect_to main_app.root_path unless current_user.admin == true
+    if current_user == nil
+      redirect_to "/users/sign_in"
+    elsif current_user.admin == false
+      redirect_to main_app.root_path
+    end
   end
   ### Popular gems integration
 
