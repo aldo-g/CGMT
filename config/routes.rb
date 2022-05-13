@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
+  get 'admin/index'
+  get 'admins/index'
   get 'home/index'
-  devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users
   resources :coasters
   resources :events
   resources :innovation_grants
   resources :news_pieces
   resources :partners
+  resources :admin
   root to: 'pages#home'
   get '/about', to: 'pages#about'
   get '/coasters', to: 'pages#coasters'

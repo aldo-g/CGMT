@@ -21,7 +21,6 @@ class PagesController < ApplicationController
   end
 
   def admin
-    
   end
 
   def volunteer
