@@ -55,4 +55,10 @@
  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
  .show {
    display: block;
+  text-align: center;
+  background: linear-gradient(90deg, #F5B647 0%, #FFC000 100%);
+  box-shadow: inset 0px -2px 0px #0081A7;
+  color: white;
+  font-size: 30px;
+  width: 100%;
  }
