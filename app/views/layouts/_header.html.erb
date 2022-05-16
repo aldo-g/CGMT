@@ -2,7 +2,8 @@
   <div class="logo-head">
     <%= image_tag "logo.png", alt: "…", width: "450", height: "102"%>
   </div>
-  <div class="nav-bar">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
     <ul>
       <li><%= link_to "events", events_path %></li>
       <li><%= link_to "about", about_path %></li>
