@@ -2,7 +2,10 @@
   <div class="logo-head">
     <%= image_tag "logo.png", alt: "…", width: "450", height: "102"%>
   </div>
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div>
+    <i class="fa-solid fa-bars dropbtn" onclick= "myFunction()"></i>
+    <i class="fa-solid fa-caret-down"></i>
+  </div>
   <div id="myDropdown" class="dropdown-content">
     <ul>
       <li><%= link_to "events", events_path %></li>

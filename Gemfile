@@ -61,3 +61,6 @@ gem 'rails_admin', '~> 3.0'
 
 #devise gem added, sorts authentication
 gem 'devise'
+
+#font awesome gem for icons and such
+gem "font-awesome-rails"
