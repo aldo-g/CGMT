@@ -1,18 +1,21 @@
 .header {
-  padding: 60px;
+  padding: 20px 60px;
   text-align: center;
   background: linear-gradient(90deg, #F5B647 0%, #FFC000 100%);
   box-shadow: inset 0px -2px 0px #0081A7;
   color: white;
   font-size: 30px;
+
 }
 
  /* Dropdown Button */
  .dropbtn {
    color: rgb(255, 255, 255);
    padding: 16px;
-   font-size: 24px;
+   font-size: 36px;
    cursor: pointer;
+   right: 0%;
+   position: relative;
  }
 
  /* Dropdown button on hover & focus */
@@ -36,6 +39,29 @@
    min-width: 160px;
    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
    z-index: 1;
+   //drop down conent styling
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111111;}
  }
 
  /* Links inside the dropdown */
@@ -60,4 +86,11 @@
   font-size: 14px;
   width: 100%;
   left: 0;
+  // margin-top: 100px;
+ }
+
+ .shown-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
  }
