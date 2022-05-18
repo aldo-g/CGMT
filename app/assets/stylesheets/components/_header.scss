@@ -8,27 +8,27 @@
 
 }
 
- /* Dropdown Button */
- .dropbtn {
-   color: rgb(255, 255, 255);
-   padding: 16px;
-   font-size: 36px;
-   cursor: pointer;
-   right: 0%;
-   position: relative;
- }
+/* Dropdown Button */
+.dropbtn {
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 36px;
+  cursor: pointer;
+  right: 0%;
+  position: relative;
+}
 
- /* Dropdown button on hover & focus */
- .dropbtn:hover,
- .dropbtn:focus {
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
   color: rgb(0, 0, 0);
   transition-duration: 2s;
- }
+}
 
 
 
- .shown-head{
+.shown-head{
   display: flex;
   align-items: center;
   justify-content: space-between;
- }
+}
