@@ -45,7 +45,9 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #333333;
+      background-color: rgb(124, 124, 124);
+      display: flex;
+      justify-content: space-around;
     }
 
     li {
