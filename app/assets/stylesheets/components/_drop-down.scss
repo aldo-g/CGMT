@@ -85,8 +85,19 @@
   padding: 16px;
   justify-content: center;
 
+  p {
+    margin-bottom: 0%;
+  }
+
   svg {
       margin-left: 10px;
       margin-top: 3px;
     }
+}
+
+.dropbtn-level2:hover {
+
+  background-color: #111111;
+
+
 }
