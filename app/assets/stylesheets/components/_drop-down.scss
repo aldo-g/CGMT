@@ -49,13 +49,14 @@
 .show {
   display: block;
   text-align: center;
-  background: linear-gradient(90deg, #F5B647 0%, #FFC000 100%);
-  box-shadow: inset 0px -2px 0px #0081A7;
   color: white;
   font-size: 14px;
   width: 100%;
   left: 0;
-  // margin-top: 100px;
+}
+
+.show2 {
+  display: block;
 }
 
 .level-1{
@@ -82,10 +83,11 @@
   display: none;
 }
 
-.dropbtn-level2 {
+.dropbtn-level2a {
   display: flex;
   padding: 16px;
   justify-content: center;
+  cursor: pointer;
 
   p {
     margin-bottom: 0%;
@@ -97,7 +99,30 @@
     }
 }
 
-.dropbtn-level2:hover {
+.dropbtn-level2a:hover {
+
+  background-color: #111111;
+
+
+}
+
+.dropbtn-level2b {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  cursor: pointer;
+
+  p {
+    margin-bottom: 0%;
+  }
+
+  svg {
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+}
+
+.dropbtn-level2b:hover {
 
   background-color: #111111;
 

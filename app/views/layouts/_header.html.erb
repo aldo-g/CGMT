@@ -14,7 +14,7 @@
       <li><%= link_to "make_event", make_event_path %></li>
       <li><%= link_to "news_pieces", news_pieces_path %></li>
       <li>
-        <div class="dropbtn-level2" onclick= "myFunction2()">
+        <div class="dropbtn-level2a" onclick= "myFunction2()">
           <p>Our Products</p>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
@@ -25,7 +25,7 @@
       <li><%= link_to "volunteer", volunteer_path %></li>
       <li><%= link_to "gallery", gallery_path %></li>
       <li>
-        <div class="dropbtn-level2" onclick= "myFunction3()">
+        <div class="dropbtn-level2b" onclick= "myFunction3()">
           <p>Innovation</p>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
@@ -46,23 +46,49 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
-// window.onclick = function (event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
-
 function myFunction2() {
   document.getElementById("productList").classList.toggle("show");
 }
+
+function myFunction3() {
+  document.getElementById("innovationList").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+  // else (!event.target.matches('.dropbtn-level2a')) {
+  //   var dropdowns = document.getElementsByClassName("productList");
+  //   var i;
+  //   for (i = 0; i < dropdowns.length; i++) {
+  //     var openDropdown = dropdowns[i];
+  //     if (openDropdown.classList.contains('show')) {
+  //       openDropdown.classList.remove('show');
+  //     }
+  //   }
+  // }
+  // else (!event.target.matches('.dropbtn-level2b')) {
+  //   var dropdowns = document.getElementsByClassName("innovationList");
+  //   var i;
+  //   for (i = 0; i < dropdowns.length; i++) {
+  //     var openDropdown = dropdowns[i];
+  //     if (openDropdown.classList.contains('show')) {
+  //       openDropdown.classList.remove('show');
+  //     }
+  //   }
+  // }
+}
+
+
 
 // Close the dropdown menu if the user clicks outside of it
 // window.onclick = function (event) {
