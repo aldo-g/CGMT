@@ -55,10 +55,6 @@
   left: 0;
 }
 
-.show2 {
-  display: block;
-}
-
 .level-1{
   list-style-type: none;
   margin: 0;
@@ -67,20 +63,6 @@
   background-color: rgb(124, 124, 124);
   display: flex;
   justify-content: space-around;
-}
-
-.level-2b {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-
-.level-2a {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: none;
 }
 
 .dropbtn-level2a {
