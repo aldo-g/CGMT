@@ -47,16 +47,16 @@ function myFunction() {
 }
 
 function myFunction2() {
-  document.getElementById("productList").classList.toggle("show");
+  document.getElementById("productList").classList.toggle("show2");
 }
 
 function myFunction3() {
-  document.getElementById("innovationList").classList.toggle("show");
+  document.getElementById("innovationList").classList.toggle("show2");
 }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
+  if (!event.target.matches('.dropbtn') || !event.target.matches('.dropbtn-level2a') || !event.target.matches('.dropbtn-level2a')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -66,26 +66,6 @@ window.onclick = function (event) {
       }
     }
   }
-  // else (!event.target.matches('.dropbtn-level2a')) {
-  //   var dropdowns = document.getElementsByClassName("productList");
-  //   var i;
-  //   for (i = 0; i < dropdowns.length; i++) {
-  //     var openDropdown = dropdowns[i];
-  //     if (openDropdown.classList.contains('show')) {
-  //       openDropdown.classList.remove('show');
-  //     }
-  //   }
-  // }
-  // else (!event.target.matches('.dropbtn-level2b')) {
-  //   var dropdowns = document.getElementsByClassName("innovationList");
-  //   var i;
-  //   for (i = 0; i < dropdowns.length; i++) {
-  //     var openDropdown = dropdowns[i];
-  //     if (openDropdown.classList.contains('show')) {
-  //       openDropdown.classList.remove('show');
-  //     }
-  //   }
-  // }
 }
 
 
