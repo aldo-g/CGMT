@@ -13,7 +13,7 @@
       <li><%= link_to "about", about_path %></li>
       <li><%= link_to "make_event", make_event_path %></li>
       <li><%= link_to "news_pieces", news_pieces_path %></li>
-      <li>
+      <li class="with-submenu">
         <div class="dropbtn-level2a">
           <p>Our Products</p>
           <i class="fa-solid fa-chevron-down"></i>
@@ -24,7 +24,7 @@
       </li>
       <li><%= link_to "volunteer", volunteer_path %></li>
       <li><%= link_to "gallery", gallery_path %></li>
-      <li>
+      <li class="with-submenu">
         <div class="dropbtn-level2b" >
           <p>Innovation</p>
           <i class="fa-solid fa-chevron-down"></i>
@@ -77,45 +77,3 @@ window.onclick = function (event) {
 // }
 
 </script>
-
-
-<%# .submenu {
-    display: none;
-    position: absolute;
-    z-index: 10;
-    list-style: none;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    min-width: calc(3.5 * var(--menu-item-size) - 5%);
-    box-shadow: 5px 5px 5px #CCC;
-}
-
-.with-submenu {
-    position: relative;
-    display: inline-block;
-    clip-path: polygon(10% 0%, 0% 100%, 0% 500%, 95% 500%, 95% 100%, 100% 50%, 95% 0%);
-    shape-outside: polygon(10% 0%, 0% 100%, 95% 100%, 100% 50%, 95% 0%);
-}
-
-.with-submenu:hover .submenu {
-    display: block;
-}
-
-.submenu > li {
-    background: #dedede;
-    border-bottom: 1px solid var(--gray-color);
-    color: #777;
-    padding: 1.2em 1em;
-    transition: 0.3s all linear;
-    display: block;
-    line-height: 0%;
-}
-
-.submenu > li:hover {
-    background: var(--gray-color)
-}
-
-.submenu > li:active {
-    background: var(--white-color);
-} %>
