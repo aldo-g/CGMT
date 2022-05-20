@@ -1,4 +1,5 @@
 .banner {
+  display: flex;
   position: relative;
   text-align: center;
   color: black;
@@ -7,10 +8,21 @@
   }
 }
 
-.centered-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: large;
+.banner-text{
+  margin-top: 25vh;
+
+  button{
+    margin-top: 15px;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
 }
+
+// .centered-text {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   font-size: large;
+// }
