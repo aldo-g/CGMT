@@ -3,9 +3,9 @@
     <div class="logo-head">
       <%= image_tag "logo.png", alt: "…", width: "450", height: "102"%>
     </div>
-    <div>
-      <i class="fa-solid fa-bars dropbtn" onclick= "myFunction()"></i>
-    </div>
+    <button type="button" onclick= "myFunction()">
+      <i class="fa-solid fa-bars dropbtn" ></i>
+    </button>
   </div>
   <div id="myDropdown" class="dropdown-content">
     <ul class="level-1">
@@ -40,29 +40,9 @@
 </div>
 
 <script>
-  /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("myDropdown").classList.add("show");
 }
-
-// Close the dropdown menu if the user clicks outside of it
-
-
-
-
-// Close the dropdown menu if the user clicks outside of it
-// window.onclick = function (event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
 
 </script>

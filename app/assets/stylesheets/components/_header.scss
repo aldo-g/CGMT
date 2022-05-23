@@ -5,7 +5,11 @@
   box-shadow: inset 0px -2px 0px #0081A7;
   color: white;
   font-size: 30px;
-
+  button {
+    padding: 0;
+      border: none;
+      background: none;
+  }
 }
 
 /* Dropdown Button */
