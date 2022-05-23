@@ -3,8 +3,8 @@
     <div class="logo-head">
       <%= image_tag "logo.png", alt: "…", width: "450", height: "102"%>
     </div>
-    <button type="button" onclick= "myFunction()">
-      <i class="fa-solid fa-bars dropbtn" ></i>
+    <button type="button" class="dropbtn">
+      <i class="fa-solid fa-bars" ></i>
     </button>
   </div>
   <div id="myDropdown" class="dropdown-content">
@@ -41,8 +41,10 @@
 
 <script>
 
-function myFunction() {
-  document.getElementById("myDropdown").classList.add("show");
-}
+
+$(".dropbtn").on("click", function () {
+  $(".level-1").toggleClass("show");
+});
+
 
 </script>
