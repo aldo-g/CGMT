@@ -64,3 +64,6 @@ gem 'devise'
 
 #font awesome gem for icons and such
 gem "font-awesome-rails"
+
+#turbofile gem, helps with ajax
+gem "turbolinks_render"
