@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'main/index'
   get 'admin/index'
   get 'admins/index'
   get 'home/index'
