@@ -67,3 +67,5 @@ gem "font-awesome-rails"
 
 #turbofile gem, helps with ajax
 gem "turbolinks_render"
+
+gem 'jquery-rails'
