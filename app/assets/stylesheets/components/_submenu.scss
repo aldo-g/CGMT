@@ -1,15 +1,17 @@
 .show2 {
   display: block;
+  position: relative;
 }
 
 .level-2b {
   display: none;
-    position: absolute;
-    z-index: 10;
-    list-style: none;
-    left: 0;
-    margin: 0;
-    padding: 0;
+  position: absolute;
+  z-index: 10;
+  list-style: none;
+  left: 0;
+  margin: 0;
+  padding: 0;
+
 }
 
 .level-2a {
@@ -22,31 +24,25 @@
   padding: 0;
 }
 
+// .with-submenu {
+//   position: relative;
+//   display: inline-block;
+// }
 
-.with-submenu {
-  position: relative;
-  display: inline-block;
-}
+// .level-2a>li {
+//   background: #dedede;
+//   border-bottom: 1px solid var(--gray-color);
+//   color: #777;
+//   padding: 1.2em 1em;
+//   transition: 0.3s all linear;
+//   display: block;
+//   line-height: 0%;
+// }
 
-.with-submenu:hover .level-2a {
-  display: block;
-}
+// .level-2a>li:hover {
+//   background: var(--gray-color)
+// }
 
-
-.level-2a>li {
-  background: #dedede;
-  border-bottom: 1px solid var(--gray-color);
-  color: #777;
-  padding: 1.2em 1em;
-  transition: 0.3s all linear;
-  display: block;
-  line-height: 0%;
-}
-
-.level-2a>li:hover {
-  background: var(--gray-color)
-}
-
-.level-2a>li:active {
-  background: var(--white-color);
-}
+// .level-2a>li:active {
+//   background: var(--white-color);
+// }

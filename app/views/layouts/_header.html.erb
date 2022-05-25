@@ -18,9 +18,11 @@
           <p>Our Products</p>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <ul id="productList" class="level-2a">
-          <li><%= link_to "coasters", coasters_path %></li>
-        </ul>
+        <div class="level-2a-box">
+          <ul id="productList" class="level-2a">
+            <li><%= link_to "coasters", coasters_path %></li>
+          </ul>
+        </div>
       </li>
       <li><%= link_to "volunteer", volunteer_path %></li>
       <li><%= link_to "gallery", gallery_path %></li>
@@ -29,10 +31,12 @@
           <p>Innovation</p>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <ul id="innovationList" class="level-2b">
-          <li><%= link_to "innovation_application", innovation_application_path %></li>
-          <li><%= link_to "innovation_details", innovation_details_path %></li>
-        </ul>
+        <div class="level-2b">
+          <ul id="innovationList">
+            <li><%= link_to "innovation_application", innovation_application_path %></li>
+            <li><%= link_to "innovation_details", innovation_details_path %></li>
+          </ul>
+        <div>
       </li>
       <li><%= link_to "donate", donate_path %></li>
     </ul>
@@ -46,5 +50,12 @@ $(".dropbtn").on("click", function () {
   $(".dropdown-content").toggleClass("show");
 });
 
+$(".dropbtn-level2a").on("click", function () {
+  $(".level-2a-box").toggleClass("show2");
+});
+
+$(".dropbtn-level2b").on("click", function () {
+  $(".level-2b").toggleClass("show2");
+});
 
 </script>
