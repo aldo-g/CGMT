@@ -31,8 +31,8 @@
           <p>Innovation</p>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <div class="level-2b">
-          <ul id="innovationList">
+        <div class="level-2b-box">
+          <ul id="innovationList" class="level-2b">
             <li><%= link_to "innovation_application", innovation_application_path %></li>
             <li><%= link_to "innovation_details", innovation_details_path %></li>
           </ul>
@@ -51,7 +51,7 @@ $(".dropbtn").on("click", function () {
 });
 
 $(".dropbtn-level2a").on("click", function () {
-  $(".level-2a-box").toggleClass("show2");
+  $(".level-2a").toggleClass("show");
 });
 
 $(".dropbtn-level2b").on("click", function () {

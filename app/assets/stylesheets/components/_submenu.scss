@@ -1,33 +1,33 @@
 .show2 {
   display: block;
-  position: relative;
+  // position: relative;
 }
 
 .level-2b {
-  display: none;
-  position: absolute;
-  z-index: 10;
+  // display: none;
+  //position: absolute;
+  // z-index: 10;
   list-style: none;
   left: 0;
   margin: 0;
   padding: 0;
-
+  
 }
 
 .level-2a {
   display: none;
-  position: absolute;
-  z-index: 10;
+  // position: absolute;
+  // z-index: 10;
   list-style: none;
   left: 0;
   margin: 0;
   padding: 0;
 }
 
-// .with-submenu {
-//   position: relative;
-//   display: inline-block;
-// }
+.with-submenu {
+  position: relative;
+  display: inline-block;
+}
 
 // .level-2a>li {
 //   background: #dedede;
@@ -46,3 +46,13 @@
 // .level-2a>li:active {
 //   background: var(--white-color);
 // }
+
+.level-2a-box {
+  li {
+
+    }
+}
+
+.level-2b-box {
+  display: none;
+}
