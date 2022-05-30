@@ -22,8 +22,12 @@
 }
 
 .mindfullness{
-  max-width: 100%;
-  height: auto;
+  justify-content: center;
+  display: flex;
+  img{
+    width: 70%;
+    height: auto;
+  }
 }
 // .centered-text {
 //   position: absolute;
