@@ -1,14 +1,16 @@
 .hope {
   background-color: #EDAF88;
   display: flex;
-
+  justify-content: space-around;
+  border-bottom: 5px inset #F07167;
+  border-top: 5px inset #F07167;
   h6 {
     text-align: center;
     font-size: 36px;
     width: 40%;
-    margin-left: 200px;
+    margin-left: 50px;
     margin-top: 200px;
-    margin-right: 200px;
+    margin-right: 50px;
   }
 }
 
